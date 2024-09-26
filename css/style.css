@@ -8,6 +8,10 @@ body {
     font-weight: 400;
 }
 
+.nav-bar img {
+    display: block !important; /* Force l'affichage de ton logo */
+    max-width: 150px; /* Ajuste la taille du logo */
+}
 
 
 h1,
