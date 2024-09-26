@@ -17,7 +17,7 @@ $email = strip_tags(htmlspecialchars($_POST['email']));
 $m_subject = strip_tags(htmlspecialchars($_POST['subject']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
 
-$to = "inis.hox01@gmail.com"; 
+$to = "contact@rrashi-facade.fr"; 
 
 
 
@@ -27,12 +27,12 @@ $mail = new PHPMailer(true);
 try {
     // Paramï¿œtres du serveur GMAIL
     $mail->isSMTP();                                    // Utiliser SMTP
-    $mail->Host = 'smtp.gmail.com';                     // Serveur SMTP (par exemple Gmail)
+    $mail->Host = 'mail.rrashi-facade.fr';                     // Serveur SMTP (par exemple Gmail)
     $mail->SMTPAuth = true;                             // Activer l'authentification SMTP
-    $mail->Username = 'inis.hox01@gmail.com';          // Adresse e-mail SMTP
-    $mail->Password = 'znzgyrfcvbbophpb';          // Mot de passe SMTP ou mot de passe d'application
+    $mail->Username = 'contact@rrashi-facade.fr';          // Adresse e-mail SMTP
+    $mail->Password = 'inissite24@A';          // Mot de passe SMTP ou mot de passe d'application
     $mail->SMTPSecure = 'ssl';                          // Activer le chiffrement TLS
-    $mail->Port = 465;                                  // Port SMTP pour TLS
+    $mail->Port = 587;                                  // Port SMTP pour TLS
     
 
    
