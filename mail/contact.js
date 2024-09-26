@@ -39,7 +39,7 @@
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
-                    $('#success > .alert-danger').append($("<strong>").text("DÃ©solÃ© " + name + ", il semble que notre service mail rencontre des problÃšmes en ce moment. Veuillez rÃ©essayer plus tard !"));
+                    $('#success > .alert-danger').append($("<strong>").text("Désolé" + name + ", il semble que notre service mail rencontre des soucis en ce moment. Veuillez nous appeler ou réessayer plus tard !"));
                     $('#success > .alert-danger').append('</div>');
                     $('#contactForm').trigger("reset");
                 },
