@@ -32,7 +32,7 @@ try {
     $mail->Username = 'contact@rrashi-facade.fr';          // Adresse e-mail SMTP
     $mail->Password = 'inissite24@A';          // Mot de passe SMTP ou mot de passe d'application
     $mail->SMTPSecure = 'ssl';                          // Activer le chiffrement TLS
-    $mail->Port = 587;                                  // Port SMTP pour TLS
+    $mail->Port = 465;                                  // Port SMTP pour TLS
     
 
    
