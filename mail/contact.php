@@ -36,6 +36,8 @@ try {
     
 
    
+$mail->SMTPDebug = 2; // Afficher tous les détails de la communication avec le serveur SMTP
+$mail->Debugoutput = 'html'; // Format de sortie
 
     // Paramï¿œtres de l'e-mail
     $mail->setFrom($email, $name);                      // L'expï¿œditeur du mail (l'adresse saisie dans le formulaire)
