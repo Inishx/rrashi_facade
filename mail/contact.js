@@ -38,7 +38,7 @@ $(function () {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
-                    $('#success > .alert-success').append($("<strong>").text("Votre message a été envoyé" + name + "));
+                    $('#success > .alert-success').append($("<strong>").text("Votre message a été envoyé" + name + ")); 
                     $('#success > .alert-sucess').append('</div>');
                     $('#contactForm').trigger("reset");
                 },
