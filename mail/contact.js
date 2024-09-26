@@ -38,8 +38,8 @@ $(function () {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
-                    $('#success > .alert-danger').append($("<strong>").text("Désolé " + name + ", il semble que notre service mail rencontre des problèmes en ce moment. Veuillez réessayer plus tard !"));
-                    $('#success > .alert-danger').append('</div>');
+                    $('#success > .alert-success').append($("<strong>").text("Votre message a été envoyé" + name + "));
+                    $('#success > .alert-sucess').append('</div>');
                     $('#contactForm').trigger("reset");
                 },
                 complete: function () {
