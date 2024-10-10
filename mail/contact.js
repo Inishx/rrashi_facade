@@ -1,5 +1,4 @@
-
-  $(function () {
+$(function () {
 
     $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
@@ -16,7 +15,7 @@
             $this.prop("disabled", true);
 
             $.ajax({
-                url: "mail/contact.php",
+                url: "./mail/contact.php",
                 type: "POST",
                 data: {
                     name: name,
@@ -39,7 +38,7 @@
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                             .append("</button>");
-                    $('#success > .alert-danger').append($("<strong>").text("Désolé " + name + ", il semble que notre service mail rencontre des soucis en ce moment. Veuillez nous appeler ou réessayer plus tard !"));
+                    $('#success > .alert-danger').append($("<strong>").text("Désolé " + name + ", il semble que notre service mail rencontre des problèmes en ce moment. Veuillez réessayer plus tard !"));
                     $('#success > .alert-danger').append('</div>');
                     $('#contactForm').trigger("reset");
                 },
